@@ -1,11 +1,13 @@
 nav {
-	margin-bottom: 2rem;
-}
+	margin-bottom: 4rem;
 
-.navbar {
-	padding: 0;
-}
+	img {
+		width: 60px;
+		height: 60px;
+		margin-left: 1.2rem;
+	}
 
-.nav-bg {
-	background-color: #181818c0;
+	.nav-item {
+		margin-right: 2rem;
+	}
 }

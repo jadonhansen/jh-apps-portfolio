@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(252, 252, 252);
+	background-color: #121212;
 }
 
 h1,
@@ -8,6 +8,13 @@ h3,
 h4,
 h5,
 h5,
+h6,
+li,
 p {
-	color: rgba(0, 0, 0, 0.8);
+	color: rgba(255, 255, 255, 0.75);
+}
+
+a {
+	font-size: 16px;
+	font-weight: 300;
 }

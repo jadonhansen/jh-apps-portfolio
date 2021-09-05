@@ -1,12 +1,8 @@
 import React from "react";
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Weatherly from "./apps/weatherly/Weatherly";
-import Contact from "./pages/Contact";
+import Contact from "./components/Contact";
 
 // Add more app home pages to this router.
 // They will then be available on a global scale.
@@ -16,7 +12,7 @@ function App() {
 		<Router>
 			<Switch>
 				<Route exact path="/">
-					<Home/>
+					<Home />
 				</Route>
 				<Route path="/weatherly">
 					<Weatherly />
