@@ -1,0 +1,43 @@
+.privacy-container {
+	padding-bottom: 4rem;
+
+	.ol-index {
+		margin: 2rem 0;
+	}
+
+	.ol-content {
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.li-heading {
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+
+	.bottom-info {
+		margin-top: 2rem;
+	}
+
+	.btn-box {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.back-button {
+		display: inline-block;
+		padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+		margin-bottom: 2rem;
+		border: 1px solid rgba(255, 255, 255, 0.75);
+		border-radius: 10px;
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.75);
+
+		&:hover {
+			cursor: pointer;
+			border-color: white;
+			color: white;
+		}
+	}
+}

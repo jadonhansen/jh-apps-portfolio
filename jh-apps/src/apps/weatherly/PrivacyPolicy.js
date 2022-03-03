@@ -1,18 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-// styles
-import '../styles/policy.scss';
+import '../../styles/privacy_policy.scss';
 
 export default function PrivacyPolicy() {
 	return (
-		<div className="container-md privacy-container">
+		<div className='container-md privacy-container'>
+			<div className='btn-box'>
+				<Link className='back-button' to={`/weatherly`}>Back to Weatherly</Link>
+			</div>
+
 			<h3>Weatherly Privacy Policy</h3>
 			<h6>Effective as of 01-01-2021</h6>
-			<p className="text-muted">If there are any questions regarding the below, please do not
+			<p className='text-muted'>If there are any questions regarding the below, please do not
 				hesitate to contact support.
 			</p>
 
-			<ol className="ol-index">
+			<ol className='ol-index'>
 				<li>Introduction</li>
 				<li>About this policy</li>
 				<li>Your rights and your preferences: Giving you choice and control</li>
@@ -28,22 +32,22 @@ export default function PrivacyPolicy() {
 				<li>How to contact us</li>
 			</ol>
 
-			<ol className="ol-content">
+			<ol className='ol-content'>
 				{/* 1. INTRODUCTION */}
 				<li>
-					<p className="li-heading">Introduction</p>
+					<p className='li-heading'>Introduction</p>
 					<p>Thanks for using Weatherly!
 						At Weatherly, we want to give you the best possible experience to ensure that you enjoy our service.
 						Your privacy and the security of your personal data is, and will always be, enormously important to us. So, we want to transparently 
 						explain how and why we gather, store, share and use your personal data - as well as outline the controls and choices you have around 
 						when and how you choose to share your personal data.
 					</p>
-					<p>That is our objective, and this Privacy Policy ("Policy") will explain exactly what we mean in further detail below.</p>
+					<p>That is our objective, and this Privacy Policy ('Policy') will explain exactly what we mean in further detail below.</p>
 				</li>
 
 				{/* 2. ABOUT THE POLICY */}
 				<li>
-					<p className="li-heading">About this Policy</p>
+					<p className='li-heading'>About this Policy</p>
 					<p>
 						This Policy sets out the essential details relating to your personal data relationship with Weatherly. 
 						From time to time, we may develop new or offer additional services. If the introduction of these new or additional services results 
@@ -62,9 +66,9 @@ export default function PrivacyPolicy() {
 
 				{/* 3. Your rights and your preferences: Giving you choice and control */}
 				<li>
-					<p className="li-heading">Your rights and your preferences: Giving you choice and control</p>
+					<p className='li-heading'>Your rights and your preferences: Giving you choice and control</p>
 					<p>
-						The General Data Protection Regulation or "GDPR" gives certain rights to individuals in relation to their personal data. Accordingly, 
+						The General Data Protection Regulation or 'GDPR' gives certain rights to individuals in relation to their personal data. Accordingly, 
 						we are happy to offer transparency and access controls to help users take advantage of those rights. As available and except as limited 
 						under applicable law, the rights afforded to individuals are:</p>
 					<p>- Right of access - the right to be informed of, and request access to, the personal data we process about you;</p>
@@ -88,7 +92,7 @@ export default function PrivacyPolicy() {
 
 				{/* 4. Personal data we collect from you */}
 				<li>
-					<p className="li-heading">Personal data we collect from you</p>
+					<p className='li-heading'>Personal data we collect from you</p>
 					<p>The points below describes personal data collected when you sign up for a Weatherly account</p>
 					<p>User Data: This is the personal data that is provided by you or collected by us to enable you to sign up for and use 
 						a Weatherly account. This includes your email address.</p>
@@ -100,7 +104,7 @@ export default function PrivacyPolicy() {
 			
 				{/* 5. What we use your personal data for */}
 				<li>
-					<p className="li-heading">What we use your personal data for</p>
+					<p className='li-heading'>What we use your personal data for</p>
 					<p>When you use or interact with a Weatherly account, we use a variety of technologies to process the personal data we 
 						collect about you for various reasons. We have set out the points below as the reasons why we process your personal data:</p>
 					<ul>
@@ -116,7 +120,7 @@ export default function PrivacyPolicy() {
 
 				{/* 6. Sharing your personal data */}
 				<li>
-					<p className="li-heading">Sharing your personal data</p>
+					<p className='li-heading'>Sharing your personal data</p>
 					<p>We have set out the categories of recipients of the personal data collected or generated through your use of the Weatherly service.</p>
 					<ul>
 						<li>Recipient: Payment processors. Reason: We will share your personal data with our payment processors as necessary to enable them to process your payments, and for anti-fraud purposes.</li>
@@ -131,7 +135,7 @@ export default function PrivacyPolicy() {
 				
 				{/* 7. Data retention and deletion */}
 				<li>
-					<p className="li-heading">Data retention and deletion</p>
+					<p className='li-heading'>Data retention and deletion</p>
 					<p>We keep your personal data only as long as necessary to provide you with the Weatherly service and for legitimate and 
 						essential business purposes, such as maintaining the performance of the Weatherly service, making data-driven business decisions about new 
 						features and offerings, complying with our legal obligations, and resolving disputes. We keep some of your personal data for as long as you 
@@ -145,13 +149,13 @@ export default function PrivacyPolicy() {
 
 				{/* 8. Transfer to other countries */}
 				<li>
-					<p className="li-heading">Transfer to other countries</p>
+					<p className='li-heading'>Transfer to other countries</p>
 					<p>Weatherly shares your personal data globally with the necessary services to securely store and process your data as specified in this Policy.</p>
 				</li>
 				
 				{/* 9. Links */}
 				<li>
-					<p className="li-heading">Links</p>
+					<p className='li-heading'>Links</p>
 					<p>We may display advertisements from third parties and other content that links to third-party websites. We cannot control 
 						or be held responsible for third parties' privacy practices and content. If you click on a third-party advertisement or link, please 
 						understand that you are leaving the Weatherly service and any personal data you provide will not be covered by this Policy. Please read their 
@@ -160,7 +164,7 @@ export default function PrivacyPolicy() {
 				
 				{/* 10. Keeping your personal data safe */}
 				<li>
-					<p className="li-heading">Keeping your personal data safe</p>
+					<p className='li-heading'>Keeping your personal data safe</p>
 					<p>We are committed to protecting our users' personal data. We implement appropriate technical and organisational 
 						measures to help protect the security of your personal data; however, please note that no system is ever completely secure. We have 
 						implemented various policies including pseudonymisation, encryption, access, and retention policies to guard against unauthorised access and 
@@ -171,12 +175,12 @@ export default function PrivacyPolicy() {
 
 				{/* 11. Children */}
 				<li>
-					<p className="li-heading">Children</p>
+					<p className='li-heading'>Children</p>
 					<p>The Weatherly service is not directed to children under the age of 13 years. The Weatherly service is also not offered 
 						to children whose age makes it illegal to process their personal data or requires parental consent for the processing of their personal data 
 						under the GDPR or other local law.</p>
 					<p>We do not knowingly collect personal data from children under 13 years or under the applicable age limit 
-						(the "Age Limit"). If you are under the Age Limit, please do not use the Weatherly service, and do not provide any personal data to us.</p>
+						(the 'Age Limit'). If you are under the Age Limit, please do not use the Weatherly service, and do not provide any personal data to us.</p>
 					<p>If you are a parent of a child under the Age Limit and become aware that your child has provided personal data to 
 						Weatherly, please contact us using the support page in the app settings, and you may request exercise of your applicable rights detailed 
 						in Section 3 'Your rights and your preferences: Giving you choice and control' of this Policy.</p>
@@ -186,7 +190,7 @@ export default function PrivacyPolicy() {
 
 				{/* 12. Changes to this Policy */}
 				<li>
-					<p className="li-heading">Changes to this Policy</p>
+					<p className='li-heading'>Changes to this Policy</p>
 					<p>We may occasionally make changes to this Policy. When we make material changes to this Policy, we'll provide you with 
 						prominent notice as appropriate under the circumstances, e.g., by displaying a prominent notice within the Weatherly service or by sending you 
 						an email and/or a device notification. We may notify you in advance. Please, therefore, make sure you read any such notice carefully.</p>
@@ -194,13 +198,13 @@ export default function PrivacyPolicy() {
 
 				{/* 13. How to contact us */}
 				<li>
-					<p className="li-heading">How to contact us</p>
+					<p className='li-heading'>How to contact us</p>
 					<p>Thank you for reading our Policy. If you have any questions about this Policy, please contact us on the support 
 						page or email us at: dev.weatherly@gmail.com</p>
 				</li>
 			</ol>
 			<p className={`text-muted bottom-info`}>We hope to provide you with a great experience while using Weatherly!</p>
-			<p className="text-muted">© Weatherly</p>
+			<p className='text-muted'>© 2022 Weatherly</p>
 		</div>
 	);
 }

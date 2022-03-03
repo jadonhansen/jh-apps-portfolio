@@ -1,0 +1,19 @@
+.badges {
+	display: flex;
+	justify-content: center;
+}
+
+.androidBadge {
+	display: inline-block;
+	width: 314px;
+	height: 122px;
+}
+
+.iosBadge {
+	display: inline-block;
+	width: 250px;
+	height: 83px;
+	margin-top: 1.2rem;
+	border-radius: 13px;
+	overflow: hidden;
+}

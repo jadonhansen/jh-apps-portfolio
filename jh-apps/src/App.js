@@ -1,23 +1,28 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Weatherly from "./apps/weatherly/Weatherly";
-import Contact from "./components/Contact";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Weatherly from './apps/weatherly/Weatherly';
+import Digiwallet from './apps/digiwallet/Digiwallet';
+import Contact from './pages/Contact';
 
-// Add more app home pages to this router.
-// They will then be available on a global scale.
+import Navbar from './components/navbar';
 
 function App() {
 	return (
 		<Router>
+			<Navbar/>
+
 			<Switch>
-				<Route exact path="/">
+				<Route exact path='/'>
 					<Home />
 				</Route>
-				<Route path="/weatherly">
+				<Route path='/weatherly'>
 					<Weatherly />
 				</Route>
-				<Route path="/contact">
+				<Route path='/digiwallet'>
+					<Digiwallet />
+				</Route>
+				<Route path='/contact'>
 					<Contact />
 				</Route>
 			</Switch>
