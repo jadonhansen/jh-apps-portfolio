@@ -1,22 +1,17 @@
 import React from 'react';
-import { Switch, Route, useRouteMatch, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import PrivacyPolicy from './PrivacyPolicy';
 
 import '../../styles/digiwallet.scss';
 
 export default function Digiwallet() {
-	let { path } = useRouteMatch();
 
 	return (
-		<Switch>
-			<Route exact path='/digiwallet'>
-				{ digiwalletHome() }
-			</Route>
-			<Route path={`${path}/privacy_policy`}>
-				<PrivacyPolicy />
-			</Route>
-		</Switch>
+		<Routes>
+			<Route path='' element={ digiwalletHome() } />
+			<Route path='privacy_policy' element={<PrivacyPolicy />} />
+		</Routes>
 	);
 
 	function digiwalletHome() {
@@ -24,7 +19,7 @@ export default function Digiwallet() {
 			<div className='container-md page-container'>
 				<h4>DigiWallet home page coming soon!</h4>
 				<p>
-					Click <Link to={`/digiwallet/privacy_policy`}>here</Link> to view Privacy Policy
+					Click <Link to='privacy_policy'>here</Link> to view Privacy Policy
 				</p>
 				<div className='badges'>
 					<a
@@ -46,5 +41,5 @@ export default function Digiwallet() {
 				</div>
 			</div>
 		);
-	};
+	}
 }

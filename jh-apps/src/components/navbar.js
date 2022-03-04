@@ -9,7 +9,7 @@ export default function Navbar(props) {
 	return (
 		<nav className='navbar navbar-expand-lg navbar-dark nav-bg'>
 			<div className='container-fluid'>
-				<Link className='navbar-brand' to={`/`}>
+				<Link className='navbar-brand' to='/'>
 					<img src={navLogo} alt='jhLogo' />
 				</Link>
 				<button
@@ -26,12 +26,12 @@ export default function Navbar(props) {
 				<div className='collapse navbar-collapse' id='navbarContent'>
 					<ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
 						<li className='nav-item'>
-							<Link className='nav-link' to={`/`}>
+							<Link className='nav-link' to='/'>
 								All Apps
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link className='nav-link' to={`/contact`}>
+							<Link className='nav-link' to='/contact'>
 								Contact Us
 							</Link>
 						</li>

@@ -1,21 +1,16 @@
 import React from 'react';
-import { Switch, Route, useRouteMatch, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import PrivacyPolicy from './PrivacyPolicy';
 import '../../styles/weatherly.scss';
 
 export default function Weatherly() {
-	let { path } = useRouteMatch();
 
 	return (
-		<Switch>
-			<Route exact path='/weatherly'>
-				{ weatherlyHome() }
-			</Route>
-			<Route path={`${path}/privacy_policy`}>
-				<PrivacyPolicy />
-			</Route>
-		</Switch>
+		<Routes>
+			<Route path='' element={ weatherlyHome() } />
+			<Route path='privacy_policy' element={<PrivacyPolicy />} />
+		</Routes>
 	);
 
 	function weatherlyHome() {
@@ -23,7 +18,7 @@ export default function Weatherly() {
 			<div className='container-md page-container'>
 				<h4>Weatherly home page coming soon!</h4>
 				<p>
-					Click <Link to={`/weatherly/privacy_policy`}>here</Link> to view Privacy Policy
+					Click <Link to='privacy_policy'>here</Link> to view Privacy Policy
 				</p>
 				<div className='badges'>
 					<a
@@ -44,5 +39,5 @@ export default function Weatherly() {
 				</div>
 			</div>
 		);
-	};
+	}
 }

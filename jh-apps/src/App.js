@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Weatherly from './apps/weatherly/Weatherly';
 import Digiwallet from './apps/digiwallet/Digiwallet';
@@ -12,20 +12,12 @@ function App() {
 		<Router>
 			<Navbar/>
 
-			<Switch>
-				<Route exact path='/'>
-					<Home />
-				</Route>
-				<Route path='/weatherly'>
-					<Weatherly />
-				</Route>
-				<Route path='/digiwallet'>
-					<Digiwallet />
-				</Route>
-				<Route path='/contact'>
-					<Contact />
-				</Route>
-			</Switch>
+			<Routes>
+				<Route path='/' element={<Home/>} />
+				<Route path='weatherly/*' element={<Weatherly />} />
+				<Route path='digiwallet/*' element={<Digiwallet />} />
+				<Route path='contact' element={<Contact />} />
+			</Routes>
 		</Router>
 	);
 }
