@@ -6,10 +6,29 @@
 		<meta name="theme-color" content="#000000" />
 		<meta name="description" content="Jadon Hansen Software Applications" />
 
-		<link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
-		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/dark/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/dark/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/dark/favicon-16x16.png" />
+		<link rel="manifest" href="%PUBLIC_URL%/dark/manifest.json" />
+
+		<script>
+			const onUpdateTheme = (event) => {
+				document.querySelectorAll(
+					[
+						"link[rel='icon']",
+						"link[rel='apple-touch-icon']",
+						"link[rel='manifest']"
+					].join(", ")
+				)
+				.forEach((element) => {
+					element.href = element.href.replace(/\/dark\/|\/light\//g, event.matches ? "/dark/" : "/light/")
+				});
+			};
+
+			matcher = window.matchMedia("(prefers-color-scheme: dark)");
+			matcher.addListener(onUpdateTheme);
+			onUpdateTheme(matcher);
+		</script>
 
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"

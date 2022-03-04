@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // styles and assets
 import '../styles/navbar.scss';
-import navLogo from '../assets/jhLogo.svg';
+import navLogo from '../assets/jadon-hansen-applications-white.svg';
 
 export default function Navbar(props) {
 	return (
@@ -25,10 +25,28 @@ export default function Navbar(props) {
 				</button>
 				<div className='collapse navbar-collapse' id='navbarContent'>
 					<ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
-						<li className='nav-item'>
-							<Link className='nav-link' to='/'>
-								All Apps
-							</Link>
+						<li class='nav-item dropdown'>
+							<a className='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+								Apps
+							</a>
+							<ul className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+								<li>
+									<Link className='nav-link' to='/'>
+										All
+									</Link>
+								</li>
+								<li><hr className="dropdown-divider" /></li>
+								<li>
+									<Link className='nav-link' to='weatherly'>
+										Weatherly
+									</Link>
+								</li>
+								<li>
+									<Link className='nav-link' to='digiwallet'>
+										DigiWallet
+									</Link>
+								</li>
+							</ul>
 						</li>
 						<li className='nav-item'>
 							<Link className='nav-link' to='/contact'>
