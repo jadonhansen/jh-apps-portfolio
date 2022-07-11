@@ -1,4 +1,4 @@
-# apps-jh-software
+# jh-apps-portfolio
 
 React SPA for the domain 'apps.jadonhansen', showcasing my mobile applications in production.
 
