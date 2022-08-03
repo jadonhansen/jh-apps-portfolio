@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
 					<p>- Explain the way we use the personal data that you share with us in order to give you a great experience when you are using DigiWallet; and</p>
 					<p>- Explain your rights and choices in relation to the personal data we collect and process about you and how we will protect your privacy.</p>
 					<p>
-						For information on how to contact us if you ever have any questions or concerns, please see Section 13 'How to contact us' below. 
+						For information on how to contact us if you ever have any questions or concerns, please see Section 13 'How to contact us' below.
 						Alternatively, if you do not agree with the content of this Policy, then please remember it is your choice whether you want to use DigiWallet.
 					</p>
 				</li>
@@ -70,20 +70,20 @@ export default function PrivacyPolicy() {
 				<li>
 					<p className="li-heading">Your rights and your preferences: Giving you choice and control</p>
 					<p>
-						The General Data Protection Regulation or "GDPR" gives certain rights to individuals in relation to their personal data. Accordingly, 
-						we are happy to offer transparency and access controls to help users take advantage of those rights. As available and except as limited 
+						The General Data Protection Regulation or "GDPR" gives certain rights to individuals in relation to their personal data. Accordingly,
+						we are happy to offer transparency and access controls to help users take advantage of those rights. As available and except as limited
 						under applicable law, the rights afforded to individuals are:</p>
 					<p>- Right of access - the right to be informed of, and request access to, the personal data we process about you;</p>
 					<p>- Right to rectification - the right to request that we amend or update your personal data where it is inaccurate or incomplete;</p>
 					<p>- Right to erasure - the right to request that we delete your personal data;</p>
 					<p>- Right to restrict - the right to request that we temporarily or permanently stop processing all or some of your personal data;</p>
-					<p>- Right to object - 1. the right, at any time, to object to us processing your personal data on grounds relating to your particular situation; 
+					<p>- Right to object - 1. the right, at any time, to object to us processing your personal data on grounds relating to your particular situation;
 						2. the right to object to your personal data being processed for direct marketing purposes;</p>
-					<p>- Right to data portability - the right to request a copy of your personal data in electronic format and 
+					<p>- Right to data portability - the right to request a copy of your personal data in electronic format and
 						the right to transmit that personal data for use in another party's service; and</p>
-					<p>- Right not to be subject to automated decision-making - the right to not be subject to a decision based solely on 
+					<p>- Right not to be subject to automated decision-making - the right to not be subject to a decision based solely on
 						automated decision making, including profiling, where the decision would have a legal effect on you or produce a similarly significant effect.</p>
-					<p>In order to enable you to learn more about these rights, exercise these rights with ease, and record your 
+					<p>In order to enable you to learn more about these rights, exercise these rights with ease, and record your
 						preferences in relation to how DigiWallet uses your personal data, we provide the following resources:</p>
 					<p>- Contact information which allows you to make a request regarding the use, rectification, access
 						and erasure of personal data.</p>
@@ -96,11 +96,11 @@ export default function PrivacyPolicy() {
 					<p>The points below describes personal data collected when you sign up for a DigiWallet account</p>
 					<p>- Usage Data: Specifically this is your device type when logging crashlytics data.</p>
 				</li>
-			
+
 				{/* 5. What we use your personal data for */}
 				<li>
 					<p className="li-heading">What we use your personal data for</p>
-					<p>When you use or interact with the DigiWallet app, we use a variety of technologies to process the personal data we 
+					<p>When you use or interact with the DigiWallet app, we use a variety of technologies to process the personal data we
 						collect about you for various reasons. We have set out the points below as the reasons why we process your personal data:</p>
 					<ul>
 						<li>Purpose: To understand, diagnose, troubleshoot, and fix issues with the DigiWallet service.
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
 							DigiWallet employees to fix, update and improve our services.</li>
 					</ul>
 				</li>
-				
+
 				{/* 7. Data retention and deletion */}
 				<li>
 					<p className="li-heading">Data retention and deletion</p>
@@ -134,16 +134,16 @@ export default function PrivacyPolicy() {
 					<p className="li-heading">Transfer to other countries</p>
 					<p>DigiWallet shares your personal data globally with the necessary services to securely store and process your data as specified in this Policy.</p>
 				</li>
-				
+
 				{/* 9. Links */}
 				<li>
 					<p className="li-heading">Links</p>
-					<p>We may display advertisements from third parties and other content that links to third-party websites. We cannot control 
-						or be held responsible for third parties' privacy practices and content. If you click on a third-party advertisement or link, please 
-						understand that you are leaving the DigiWallet service and any personal data you provide will not be covered by this Policy. Please read their 
+					<p>We may display advertisements from third parties and other content that links to third-party websites. We cannot control
+						or be held responsible for third parties' privacy practices and content. If you click on a third-party advertisement or link, please
+						understand that you are leaving the DigiWallet service and any personal data you provide will not be covered by this Policy. Please read their
 						privacy policies to find out how they collect and process your personal data.</p>
 				</li>
-				
+
 				{/* 10. Keeping your personal data safe */}
 				<li>
 					<p className="li-heading">Keeping your personal data safe</p>
@@ -156,8 +156,8 @@ export default function PrivacyPolicy() {
 				{/* 11. Children */}
 				<li>
 					<p className="li-heading">Children</p>
-					<p>The DigiWallet service is not directed to children under the age of 13 years. The DigiWallet service is also not offered 
-						to children whose age makes it illegal to process their personal data, even anonymously, or requires parental consent for the processing of their personal data 
+					<p>The DigiWallet service is not directed to children under the age of 13 years. The DigiWallet service is also not offered
+						to children whose age makes it illegal to process their personal data, even anonymously, or requires parental consent for the processing of their personal data
 						under the GDPR or other local law.</p>
 					<p>We do not knowingly collect anonymous, personal data from children under 13 years or under the applicable age
 						limit (the "Age Limit"). If you are under the Age Limit, please do not use the DigiWallet service.</p>
@@ -166,19 +166,19 @@ export default function PrivacyPolicy() {
 				{/* 12. Changes to this Policy */}
 				<li>
 					<p className="li-heading">Changes to this Policy</p>
-					<p>We may occasionally make changes to this Policy. When we make material changes to this Policy, we'll provide you with 
-						prominent notice as appropriate under the circumstances, e.g., by displaying a prominent notice within the DigiWallet service or by sending you 
+					<p>We may occasionally make changes to this Policy. When we make material changes to this Policy, we'll provide you with
+						prominent notice as appropriate under the circumstances, e.g., by displaying a prominent notice within the DigiWallet service or by sending you
 						an email and/or a device notification. We may notify you in advance. Please, therefore, make sure you read any such notice carefully.</p>
 				</li>
 
 				{/* 13. How to contact us */}
 				<li>
 					<p className="li-heading">How to contact us</p>
-					<p>Please email us at: admin(at)digiwalletapp.com</p>
+					<p>Please email us at: apps(at)jadonhansen.com</p>
 				</li>
 			</ol>
 			<p className={`text-muted bottom-info`}>We hope to provide you with a unique experience while using DigiWallet!</p>
-			<p className="text-muted">© 2022 DigiWallet (Pty) Ltd.</p>
+			<p className="text-muted">© 2022 Jadon Hansen.</p>
 		</div>
 	);
 }
