@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../../styles/privacy_policy.scss";
+import "../styles/privacy_policy.scss";
 
-export default function PrivacyPolicy() {
+export default function DigiWalletPolicy() {
 	return (
 		<div className="container-md privacy-container">
 			<div className="btn-box">
