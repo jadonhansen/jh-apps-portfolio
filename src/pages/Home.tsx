@@ -5,21 +5,24 @@ import "../styles/home.scss";
 
 export default function Home() {
 	return (
-		<div className="container-md page-container">
-			<h4>Apps home page coming soon!</h4>
-			<p>For now, checkout our latest two apps
-				<Link className="link_home_w" to={"/weatherly"}>
-					Weatherly
-				</Link>
-				and
-				<Link className="link_home_dw" to={"/digiwallet"}>
-					DigiWallet
-				</Link>
-			</p>
-			<p>or</p>
-			<Link className="link_home_contact" to={"/contact"}>
-				Contact Us
-			</Link>
+		<div className="container-md home">
+			<div className="row">
+				<div className="col-8 left">
+					<h1>Apps made for the experience</h1>
+					<p>Check out my existing two apps</p>
+					<div className="app-link">
+						<img className="app-icon" src={require("../assets/weatherly/AppIcon.png")}></img>
+						<Link className="link_home_w" to={"/weatherly"}>Weatherly</Link>
+					</div>
+					<div className="app-link">
+						<img className="app-icon" src={require("../assets/digiwallet/AppIcon.png")}></img>
+						<Link className="link_home_dw" to={"/digiwallet"}>Digiwallet</Link>
+					</div>
+				</div>
+				<div className="col-4 right">
+					<p>image</p>
+				</div>
+			</div>
 		</div>
 	);
 }

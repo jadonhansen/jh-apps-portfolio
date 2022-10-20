@@ -6,7 +6,7 @@ import "../styles/weatherly.scss";
 export default function Weatherly() {
 
 	return (
-		<div className="container-md page-container">
+		<div className="container-md weatherly">
 			<h4>Weatherly home page coming soon!</h4>
 			<p>
 				Click <Link to="privacy_policy">here</Link> to view Privacy Policy

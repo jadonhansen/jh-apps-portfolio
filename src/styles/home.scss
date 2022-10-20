@@ -1,23 +1,26 @@
-.page-container {
-	padding: 4rem;
+.home {
+	width: 80%;
 
-	h4 {
-		padding-bottom: 2rem;
-		text-align: center;
+	h1 {
+		font-size: 5rem;
+		margin-bottom: 3rem;
 	}
 
-	p {
-		text-align: center;
+	.app-link {
+		display: flex;
+		margin-bottom: 1rem;
+
+		.app-icon {
+			width: 40px;
+			height: 40px;
+			border-radius: 100px;
+			margin-right: 0.5rem;
+		}
 	}
 
-	.link_home_w,
-	.link_home_dw {
+	.link_home_w, .link_home_dw {
 		margin-left: 5px;
 		margin-right: 5px;
-	}
-
-	.link_home_contact {
-		display: block;
-		text-align: center;
+		align-self: center;
 	}
 }

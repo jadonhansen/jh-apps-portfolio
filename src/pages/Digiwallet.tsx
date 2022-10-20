@@ -6,7 +6,7 @@ import "../styles/digiwallet.scss";
 export default function Digiwallet() {
 
 	return (
-		<div className="container-md page-container">
+		<div className="container-md digiwallet">
 			<h4>DigiWallet home page coming soon!</h4>
 			<p>
 				Click <Link to="privacy_policy">here</Link> to view Privacy Policy
