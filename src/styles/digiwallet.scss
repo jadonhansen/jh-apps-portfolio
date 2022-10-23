@@ -1,21 +1,65 @@
 .digiwallet {
-	.badges {
-		display: flex;
-		justify-content: center;
+	.row {
+		min-height: calc(100vh - 106px);
 	}
+
+	.landing {
+		.app-title {
+			display: flex;
+			flex-direction: row;
+
+			img {
+				width: 80px;
+				height: 80px;
+				border-radius: 20px;
+				margin-right: 1rem;
+			}
+
+			h1 {
+				font-size: 5rem;
+			}
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		.badges {
+			display: flex;
 	
-	.androidBadge {
-		display: inline-block;
-		width: 314px;
-		height: 122px;
+			.androidBadge {
+				width: 314px;
+				height: 124px;
+				display: inline-block;
+			}
+			
+			.iosBadge {
+				display: inline-block;
+				width: 250px;
+				height: 83px;
+				margin-top: 1.2rem;
+				border-radius: 13px;
+				overflow: hidden;
+			}
+		}
+
+		.landing-img {
+			height: 36rem;
+			width: 27rem;
+		}
 	}
-	
-	.iosBadge {
-		display: inline-block;
-		width: 250px;
-		height: 83px;
-		margin-top: 1.2rem;
-		border-radius: 13px;
-		overflow: hidden;
+
+	.about {
+		img {
+			height: 30rem;
+			width: 38rem;
+		}
 	}
+
+	.features {
+		img {
+			height: 35rem;
+			width: 28rem;
+		}
+	}	
 }

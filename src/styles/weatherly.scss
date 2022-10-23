@@ -1,21 +1,65 @@
 .weatherly {
-	.badges {
-		display: flex;
-		justify-content: center;
+	.row {
+		min-height: calc(100vh - 106px);
 	}
+
+	.landing {
+		.app-title {
+			display: flex;
+			flex-direction: row;
+
+			img {
+				width: 80px;
+				height: 80px;
+				border-radius: 20px;
+				margin-right: 1rem;
+			}
+
+			h1 {
+				font-size: 5rem;
+			}
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		.badges {
+			display: flex;
 	
-	.androidBadge {
-		width: 314px;
-		height: 124px;
-		display: inline-block;
+			.androidBadge {
+				width: 314px;
+				height: 124px;
+				display: inline-block;
+			}
+			
+			.iosBadge {
+				display: inline-block;
+				width: 250px;
+				height: 83px;
+				margin-top: 1.2rem;
+				border-radius: 13px;
+				overflow: hidden;
+			}
+		}
+
+		.landing-img {
+			height: 35rem;
+			width: 24rem;
+		}
 	}
-	
-	.iosBadge {
-		display: inline-block;
-		width: 250px;
-		height: 83px;
-		margin-top: 1.2rem;
-		border-radius: 13px;
-		overflow: hidden;
+
+	.about {
+		img {
+			height: 45rem;
+			width: 35rem;
+		}
+	}
+
+	.features {
+		img {
+			height: 40rem;
+			width: 19.5rem;
+		}
 	}
 }
