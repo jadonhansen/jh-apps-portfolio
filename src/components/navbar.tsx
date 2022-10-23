@@ -31,7 +31,7 @@ export default function Navbar() {
 							<ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								<li>
 									<Link className="nav-link" to="/">
-										All
+										Home
 									</Link>
 								</li>
 								<li><hr className="dropdown-divider" /></li>
