@@ -8,7 +8,7 @@ export default function Weatherly() {
 	return (
 		<div className="container-md weatherly">
 			<div className="row landing">
-				<div className="col-md-8">
+				<div className="col-md-8 left">
 					<div className="app-title">
 						<img src={require("../assets/weatherly/AppIcon.png")}></img>
 						<h1>Weatherly</h1>
@@ -33,7 +33,7 @@ export default function Weatherly() {
 					</div>
 				</div>
 				<div className="col-md-4">
-					<img className="landing-img" src={require("../assets/weatherly/weatherlyLanding.png")}></img>
+					<img className="landing-img" src={require("../assets/weatherly/weatherlyLanding1.png")}></img>
 				</div>
 			</div>
 

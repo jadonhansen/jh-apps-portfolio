@@ -8,7 +8,7 @@ export default function Digiwallet() {
 	return (
 		<div className="container-md digiwallet">
 			<div className="row landing">
-				<div className="col-md-8">
+				<div className="col-md-7 left">
 					<div className="app-title">
 						<img src={require("../assets/digiwallet/AppIcon.png")}></img>
 						<h1>Digiwallet</h1>
@@ -33,7 +33,7 @@ export default function Digiwallet() {
 						</a>
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-5">
 					<img className="landing-img" src={require("../assets/digiwallet/digiwalletLanding.png")}></img>
 				</div>
 			</div>
