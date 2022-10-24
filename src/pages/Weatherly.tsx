@@ -6,7 +6,7 @@ import "../styles/weatherly.scss";
 export default function Weatherly() {
 
 	return (
-		<div className="container-md weatherly">
+		<div className="container-fluid weatherly">
 			<div className="row landing">
 				<div className="col-md-8 left">
 					<div className="app-title">
@@ -38,12 +38,12 @@ export default function Weatherly() {
 			</div>
 
 			<div className="row about">
-				<div className="col-md-6">
+				<div className="col-md-7">
 					<img src={require("../assets/weatherly/weatherlyAbout.png")}></img>
 				</div>
-				<div className="col-md-6">
+				<div className="col-md-5 right">
 					<h3>About</h3>
-					<p>Weatherly was designed for the user who doesn&apos;t have time to interpret complicated graphs and weather statistics.</p>
+					<p>Weatherly was designed for the user who doesn&apos;t have time to interpret complicated graphs and weather statistics (unless you&apos;re into that kind of thing).</p>
 					<p>With screen time so high nowadays Weatherly makes sure you get your weather related answers as easily as possible and in no time at all.</p>
 					<p>Easily personalise your experience with light or dark mode, imperial or metric unit settings and much more!</p>
 				</div>
@@ -66,7 +66,7 @@ export default function Weatherly() {
 					<img src={require("../assets/weatherly/weatherlyFeatures.png")}></img>
 				</div>
 				<div className="col-md-4">
-					<h4>Premium features</h4>
+					<h3>Premium features</h3>
 					<p>- 24 hour and 7 day forecast graphs.</p>
 					<p>- Save an infinite amount of locations.</p>
 					<p>- Set a saved location to be your default home screen location.</p>
@@ -74,23 +74,37 @@ export default function Weatherly() {
 				</div>
 			</div>
 
-			<div className="row">
+			<div className="row api">
 				<h3>API Source</h3>
-				<p>The weather data originates from the global weather API provider OpenWeatherMap, providing you with pinpoint accuracy data. Don&apos;t agree? Then utilise our weather-accuracy feature to help us improve the data.</p>
+				<p>The weather data originates from the global weather API provider, OpenWeatherMap, providing you with pinpoint accuracy data.</p>
+				<p>Don&apos;t agree? Then utilise our in-app, weather-accuracy feature to report discrepancies.</p>
 				<a href="https://openweathermap.org/guide" target="_blank" rel="noreferrer">OpenWeatherMap</a>
 			</div>
 
-			<div className="row">
+			<div className="row reviews">
 				<h3>Reviews from users</h3>
-				<div className="review-box">
+				<div className="col-md-4">
+					<div className="review-box">
 
+					</div>
 				</div>
-				<div className="review-box">
+				<div className="col-md-4">
+					<div className="review-box">
+						
+					</div>
+				</div>
+				<div className="col-md-4">
+					<div className="review-box">
+						
+					</div>
+				</div>
+			</div>
 
-				</div>
-				<div className="review-box">
-
-				</div>
+			<div className="row footer">
+				<a>Get it for Android</a>
+				<a>Get it for iOS</a>
+				<a>Weatherly Privacy Policy</a>
+				<a>Contact</a>
 			</div>
 		</div>
 	);
