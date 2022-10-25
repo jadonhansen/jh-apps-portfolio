@@ -100,7 +100,7 @@ export default function Weatherly() {
 				</div>
 			</div>
 
-			<AppsFooter />
+			<AppsFooter app="weatherly"/>
 		</div>
 	);
 }

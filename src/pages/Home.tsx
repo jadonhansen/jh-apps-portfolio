@@ -13,15 +13,19 @@ export default function Home() {
 					<div className="link">
 						<img className="app-icon" src={require("../assets/weatherly/AppIcon.png")}></img>
 						<div className="hover-wrapper">
-							<Link className="app-link" to={"/weatherly"}>Weatherly</Link>
-							<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
+							<Link className="app-link" to={"/weatherly"}>
+								Weatherly
+								<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
+							</Link>
 						</div>
 					</div>
 					<div className="link">
 						<img className="app-icon" src={require("../assets/digiwallet/AppIcon.png")}></img>
 						<div className="hover-wrapper">
-							<Link className="app-link" to={"/digiwallet"}>Digiwallet</Link>
-							<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
+							<Link className="app-link" to={"/digiwallet"}>
+								Digiwallet
+								<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
+							</Link>
 						</div>
 					</div>
 				</div>

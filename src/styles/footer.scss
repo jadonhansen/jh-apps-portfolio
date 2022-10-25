@@ -1,4 +1,45 @@
 .footer {
 	width: 100%;
-	padding: 8rem 4rem;
+	padding: 4rem;
+
+	.left {
+		display: flex;
+		align-items: center;
+
+		.badges {
+			.androidBadge {
+				width: 183px;
+				height: 71px;
+			}
+			
+			.iosBadge {
+				width: 150px;
+				height: 48px;
+				border-radius: 13px;
+			}
+		}
+	}
+
+	.right {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+
+		.kofi {
+			border: 0px;
+			height: 36px;
+			margin-left: 2rem;
+		}
+
+		.links {
+			display: flex;
+			flex-direction: column;
+
+			a {
+				text-decoration: none;
+			}
+		}
+
+	}
 }

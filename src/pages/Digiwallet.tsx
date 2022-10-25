@@ -83,7 +83,7 @@ export default function Digiwallet() {
 				</div>
 			</div>
 
-			<AppsFooter />
+			<AppsFooter app="digiwallet" />
 		</div>
 	);
 }
