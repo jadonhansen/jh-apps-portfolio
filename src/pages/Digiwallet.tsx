@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import AppsFooter from "../components/AppsFooter";
 
 import "../styles/digiwallet.scss";
 
 export default function Digiwallet() {
 
 	return (
-		<div className="container-md digiwallet">
+		<div className="container-fluid digiwallet">
 			<div className="row landing">
 				<div className="col-md-7 left">
 					<div className="app-title">
@@ -39,10 +39,10 @@ export default function Digiwallet() {
 			</div>
 
 			<div className="row about">
-				<div className="col-md-6">
+				<div className="col-md-7 left">
 					<img src={require("../assets/digiwallet/digiwalletAbout.png")}></img>
 				</div>
-				<div className="col-md-6">
+				<div className="col-md-5 right">
 					<h3>About</h3>
 					<p>With DigiWallet you&apos;re able to digitally store all of your barcoded loyalty, rewards or club cards.</p>
 					<p> Developed for an effortless experience - you&apos;re able to add, edit, find and display your cards all while you&apos;re in line at the till, it&apos;s that quick!</p>
@@ -52,30 +52,38 @@ export default function Digiwallet() {
 			</div>
 
 			<div className="row features">
-				<h3>Features</h3>
+				<div className="col-md-6">
+					<h3>Features</h3>
+					<p>- Add any card with a barcode for scanning.</p>
+					<p>- Pick from well-known card brands or create your own custom cards.</p>
+					<p>- Easily find and organise the way you view your cards.</p>
+					<p>- Dark theme and light theme.</p>
+				</div>
 				<div className="col-md-6">
 					<img src={require("../assets/digiwallet/digiwalletFeatures.png")}></img>
 				</div>
-				<div className="col-md-6">
-					<p>Add any card with a barcode for scanning.</p>
-					<p>Pick from well-known card brands or create your own custom cards.</p>
-					<p>Easily find and organise the way you view your cards.</p>
-					<p>Dark theme and light theme.</p>
-				</div>
 			</div>
 
-			<div className="row">
+			<div className="row reviews">
 				<h3>Reviews from users</h3>
-				<div className="review-box">
+				<div className="col-md-4">
+					<div className="review-box">
 
+					</div>
 				</div>
-				<div className="review-box">
-
+				<div className="col-md-4">
+					<div className="review-box">
+						
+					</div>
 				</div>
-				<div className="review-box">
-
+				<div className="col-md-4">
+					<div className="review-box">
+						
+					</div>
 				</div>
 			</div>
+
+			<AppsFooter />
 		</div>
 	);
 }

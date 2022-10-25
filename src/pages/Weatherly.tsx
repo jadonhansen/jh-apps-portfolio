@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
+import AppsFooter from "../components/AppsFooter";
 import "../styles/weatherly.scss";
 
 export default function Weatherly() {
@@ -100,12 +100,7 @@ export default function Weatherly() {
 				</div>
 			</div>
 
-			<div className="row footer">
-				<a>Get it for Android</a>
-				<a>Get it for iOS</a>
-				<a>Weatherly Privacy Policy</a>
-				<a>Contact</a>
-			</div>
+			<AppsFooter />
 		</div>
 	);
 }
