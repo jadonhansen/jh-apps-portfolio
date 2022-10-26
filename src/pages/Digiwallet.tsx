@@ -16,12 +16,10 @@ export default function Digiwallet() {
 					<p>For an effortless shopping experience.</p>
 					<div className="badges">
 						<a href="https://apps.apple.com/us/app/digiwallet/id1593438301?itsct=apps_box_badge&amp;itscg=30200"
-							className="iosBadge"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1638230400&h=5e365ba6b8b5c634c223f9a9e3bff004"
-								alt="Download on the App Store" style={{borderRadius: "13px", width: "250px", height: "83px"}} />
+							<img className="iosBadge" alt="Download on the App Store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1638230400&h=5e365ba6b8b5c634c223f9a9e3bff004" />
 						</a>
 
 						<a
@@ -33,7 +31,7 @@ export default function Digiwallet() {
 						</a>
 					</div>
 				</div>
-				<div className="col-md-5">
+				<div className="col-md-5 right">
 					<img className="landing-img" src={require("../assets/digiwallet/digiwalletLanding.png")}></img>
 				</div>
 			</div>
@@ -59,24 +57,24 @@ export default function Digiwallet() {
 					<p>- Easily find and organise the way you view your cards.</p>
 					<p>- Dark theme and light theme.</p>
 				</div>
-				<div className="col-md-6">
+				<div className="col-md-6 right">
 					<img src={require("../assets/digiwallet/digiwalletFeatures.png")}></img>
 				</div>
 			</div>
 
 			<div className="row reviews">
 				<h3>Reviews from users</h3>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<div className="review-box">
 
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<div className="review-box">
 						
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<div className="review-box">
 						
 					</div>

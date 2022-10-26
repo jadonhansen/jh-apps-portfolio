@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0;
 
 	h3 {
 		color: tomato !important;
@@ -25,6 +26,8 @@
 					height: 80px;
 					border-radius: 20px;
 					margin-right: 1rem;
+					pointer-events: none;
+					user-select: none;
 				}
 	
 				h1 {
@@ -40,13 +43,15 @@
 
 			.badges {
 				display: flex;
-		
+
 				.androidBadge {
 					width: 314px;
 					height: 124px;
 					display: inline-block;
+					pointer-events: none;
+					user-select: none;
 				}
-				
+
 				.iosBadge {
 					display: inline-block;
 					width: 250px;
@@ -54,6 +59,8 @@
 					margin-top: 1.2rem;
 					border-radius: 13px;
 					overflow: hidden;
+					pointer-events: none;
+					user-select: none;
 				}
 			}
 		}
@@ -61,6 +68,57 @@
 		.landing-img {
 			height: 35rem;
 			width: 15rem;
+			pointer-events: none;
+			user-select: none;
+		}
+
+		@media only screen and (max-width: 767px) {
+			.left {
+				margin-top: 0;
+
+				.app-title {
+					img {
+						width: 50px;
+						height: 50px;
+						border-radius: 15px;
+					}
+
+					h1 {
+						font-size: 3rem !important;
+					}
+				}
+
+				p {
+					margin: 0;
+				}
+
+				.badges {
+					display: contents;
+
+					.iosBadge {
+						width: 150px;
+						height: 83px;
+						border-radius: 13px;
+						margin-left: 0.7rem;
+					}
+
+					.androidBadge {
+						width: 175px;
+						height: 75px;
+					}
+				}
+			}
+
+			.right {
+				display: flex;
+				justify-content: center;
+
+				.landing-img {
+					height: 25rem;
+					width: 10rem;
+					margin-top: 2rem;
+				}
+			}
 		}
 	}
 
@@ -77,6 +135,31 @@
 		img {
 			height: 43rem;
 			width: 33rem;
+			pointer-events: none;
+			user-select: none;
+		}
+
+		@media only screen and (max-width: 1060px) {
+			img {
+				height: 38rem;
+				width: 28rem;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.about {
+			min-height: fit-content !important;
+
+			.right {
+				h3 {
+					margin: 0;
+				}
+			}
+	
+			.col-img {
+				display: none;
+			}
 		}
 	}
 
@@ -88,9 +171,27 @@
 			margin-bottom: 4rem;
 		}
 
-		img {
-			height: 40rem;
-			width: 19.5rem;
+		.img-col {
+			display: flex;
+			justify-content: center;
+
+			img {
+				height: 40rem;
+				width: 19.5rem;
+				pointer-events: none;
+				user-select: none;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.features {
+			.img-col {
+				img {
+					height: 25rem;
+					width: 12rem;
+				}
+			}
 		}
 	}
 
@@ -98,6 +199,7 @@
 		width: 80%;
 		display: flex;
 		flex-direction: column;
+		text-align: center;
 		margin-bottom: 10rem;
 
 		h3 {
@@ -107,7 +209,7 @@
 
 	.reviews {
 		width: 100%;
-		background-color: tomato;
+		background: linear-gradient(to bottom, transparent, #080808b6), tomato;
 		padding: 8rem 4rem;
 
 		h3 {
@@ -126,6 +228,29 @@
 			width: 15rem;
 			background-color: rgba(255, 255, 255, 0.8);
 			border-radius: 25px;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.reviews {
+			padding: 2rem;
+
+			h3 {
+				margin-bottom: 3rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.weatherly {
+		.landing, .about, .features, .api {
+			width: 100%;
+			margin-bottom: 4rem;
+
+			h3 {
+				margin-bottom: 2rem !important;
+			}
 		}
 	}
 }

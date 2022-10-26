@@ -10,12 +10,16 @@
 			.androidBadge {
 				width: 183px;
 				height: 71px;
+				pointer-events: none;
+				user-select: none;
 			}
 			
 			.iosBadge {
 				width: 150px;
 				height: 48px;
 				border-radius: 13px;
+				pointer-events: none;
+				user-select: none;
 			}
 		}
 	}
@@ -30,6 +34,8 @@
 			border: 0px;
 			height: 36px;
 			margin-left: 2rem;
+			pointer-events: none;
+			user-select: none;
 		}
 
 		.links {

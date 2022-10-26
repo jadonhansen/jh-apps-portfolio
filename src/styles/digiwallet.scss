@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0;
 
 	h3 {
 		color: #1DA1F2 !important;
@@ -25,6 +26,8 @@
 					height: 80px;
 					border-radius: 20px;
 					margin-right: 1rem;
+					pointer-events: none;
+					user-select: none;
 				}
 	
 				h1 {
@@ -45,8 +48,10 @@
 					width: 314px;
 					height: 124px;
 					display: inline-block;
+					pointer-events: none;
+					user-select: none;
 				}
-				
+
 				.iosBadge {
 					display: inline-block;
 					width: 250px;
@@ -54,14 +59,68 @@
 					margin-top: 1.2rem;
 					border-radius: 13px;
 					overflow: hidden;
+					pointer-events: none;
+					user-select: none;
 				}
 			}
 		}
 
-
 		.landing-img {
 			height: 36rem;
 			width: 27rem;
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.landing {
+			.left {
+				margin-top: 0;
+	
+				.app-title {
+					img {
+						width: 50px;
+						height: 50px;
+						border-radius: 15px;
+					}
+	
+					h1 {
+						font-size: 3rem;
+					}
+				}
+	
+				p {
+					margin: 0;
+				}
+
+				.badges {
+					display: contents;
+
+					.iosBadge {
+						width: 150px;
+						height: 83px;
+						border-radius: 13px;
+						margin-left: 0.7rem;
+					}
+	
+					.androidBadge {
+						width: 175px;
+						height: 75px;
+					}
+				}
+			}
+
+			.right {
+				display: flex;
+				justify-content: center;
+	
+				.landing-img {
+					height: 20rem;
+					width: 13.5rem;
+					margin-top: 2rem;
+				}
+			}
 		}
 	}
 
@@ -82,6 +141,18 @@
 		img {
 			height: 28rem;
 			width: 40rem;
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.about {
+			min-height: fit-content;
+
+			.left {
+				display: none;
+			}
 		}
 	}
 
@@ -93,15 +164,31 @@
 			margin: 0 0 4rem 0;
 		}
 
-		img {
-			height: 35rem;
-			width: 28rem;
+		.right {
+			img {
+				height: 35rem;
+				width: 28rem;
+				pointer-events: none;
+				user-select: none;
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+			.right {
+				display: flex;
+				justify-content: center;
+
+				img {
+					height: 25rem;
+					width: 20rem;
+				}
+			}
 		}
 	}
 
 	.reviews {
 		width: 100%;
-		background-color: #1DA1F2;
+		background: linear-gradient(to bottom, transparent, #080808b6), #1DA1F2;
 		padding: 8rem 4rem;
 
 		h3 {
@@ -120,6 +207,29 @@
 			width: 15rem;
 			background-color: rgba(255, 255, 255, 0.8);
 			border-radius: 25px;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.reviews {
+			padding: 2rem;
+
+			h3 {
+				margin-bottom: 3rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.digiwallet {
+		.landing, .about, .features, .api {
+			width: 100%;
+			margin-bottom: 4rem;
+
+			h3 {
+				margin-bottom: 2rem !important;
+			}
 		}
 	}
 }

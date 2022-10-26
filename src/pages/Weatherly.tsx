@@ -16,12 +16,10 @@ export default function Weatherly() {
 					<p>Bringing you the best of weather, wherever, whenever.</p>
 					<div className="badges">
 						<a href="https://apps.apple.com/za/app/weatherly/id1583456822?itsct=apps_box_badge&amp;itscg=30200"
-							className="iosBadge"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1632096000&h=c1b7a961cd4d624bc76116e140473847"
-								alt="Download on the App Store" style={{borderRadius: "13px", width: "250px", height: "83px"}} />
+							<img className="iosBadge" alt="Download on the App Store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1632096000&h=c1b7a961cd4d624bc76116e140473847" />
 						</a>
 						<a
 							href="https://play.google.com/store/apps/details?id=com.jadonhansen.weatherly&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
@@ -32,13 +30,13 @@ export default function Weatherly() {
 						</a>
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-4 right">
 					<img className="landing-img" src={require("../assets/weatherly/weatherlyLanding1.png")}></img>
 				</div>
 			</div>
 
 			<div className="row about">
-				<div className="col-md-7">
+				<div className="col-md-7 col-img">
 					<img src={require("../assets/weatherly/weatherlyAbout.png")}></img>
 				</div>
 				<div className="col-md-5 right">
@@ -50,7 +48,7 @@ export default function Weatherly() {
 			</div>
 
 			<div className="row features">
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<h3>Features</h3>
 					<p>- Your current location&apos;s weather which updates as you move about.</p>
 					<p>- A 24 hour and 7 day forecast for your location.</p>
@@ -62,10 +60,10 @@ export default function Weatherly() {
 					<p>- Moon phases.</p>
 					<p>- Dark theme & light theme.</p>
 				</div>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3 img-col">
 					<img src={require("../assets/weatherly/weatherlyFeatures.png")}></img>
 				</div>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<h3>Premium features</h3>
 					<p>- 24 hour and 7 day forecast graphs.</p>
 					<p>- Save an infinite amount of locations.</p>
@@ -83,17 +81,17 @@ export default function Weatherly() {
 
 			<div className="row reviews">
 				<h3>Reviews from users</h3>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<div className="review-box">
 
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<div className="review-box">
 						
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-12 col-md-4 mb-3">
 					<div className="review-box">
 						
 					</div>
