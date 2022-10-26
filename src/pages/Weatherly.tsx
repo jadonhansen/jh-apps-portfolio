@@ -48,7 +48,7 @@ export default function Weatherly() {
 			</div>
 
 			<div className="row features">
-				<div className="col-12 col-md-4 mb-3">
+				<div className="col-12 col-lg-4 mb-3">
 					<h3>Features</h3>
 					<p>- Your current location&apos;s weather which updates as you move about.</p>
 					<p>- A 24 hour and 7 day forecast for your location.</p>
@@ -60,10 +60,10 @@ export default function Weatherly() {
 					<p>- Moon phases.</p>
 					<p>- Dark theme & light theme.</p>
 				</div>
-				<div className="col-12 col-md-4 mb-3 img-col">
+				<div className="col-12 col-lg-4 mb-3 img-col">
 					<img src={require("../assets/weatherly/weatherlyFeatures.png")}></img>
 				</div>
-				<div className="col-12 col-md-4 mb-3">
+				<div className="col-12 col-lg-4 mb-3">
 					<h3>Premium features</h3>
 					<p>- 24 hour and 7 day forecast graphs.</p>
 					<p>- Save an infinite amount of locations.</p>

@@ -105,6 +105,7 @@
 					.androidBadge {
 						width: 175px;
 						height: 75px;
+						margin-top: 1.3rem;
 					}
 				}
 			}
@@ -120,11 +121,22 @@
 				}
 			}
 		}
+
+		@media only screen and (max-width: 361px) {
+			.left {
+				.badges {
+					.androidBadge {
+						margin-top: 0;
+					}
+				}
+			}
+		}
 	}
 
 	.about {
 		width: 90%;
-		min-height: 100vh;
+		min-height: fit-content;
+		margin-bottom: 10rem;
 
 		.right {
 			h3 {
@@ -165,7 +177,8 @@
 
 	.features {
 		width: 80%;
-		min-height: 100vh;
+		min-height: fit-content;
+		margin-bottom: 10rem;
 
 		h3 {
 			margin-bottom: 4rem;
@@ -187,16 +200,14 @@
 	@media only screen and (max-width: 767px) {
 		.features {
 			.img-col {
-				img {
-					height: 25rem;
-					width: 12rem;
-				}
+				display: none;
 			}
 		}
 	}
 
 	.api {
 		width: 80%;
+		min-height: fit-content;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -209,6 +220,7 @@
 
 	.reviews {
 		width: 100%;
+		min-height: fit-content;
 		background: linear-gradient(to bottom, transparent, #080808b6), tomato;
 		padding: 8rem 4rem;
 
