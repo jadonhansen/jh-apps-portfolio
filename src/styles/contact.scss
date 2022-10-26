@@ -10,6 +10,14 @@
 		width: 100%;
 
 		.left {
+			.success {
+				color: rgb(27, 168, 27) !important;
+			}
+
+			.error {
+				color: rgb(196, 76, 76) !important;
+			}
+
 			.form-floating {
 				max-width: 500px;
 			}
