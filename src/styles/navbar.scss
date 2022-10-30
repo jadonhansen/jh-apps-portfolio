@@ -19,10 +19,37 @@ nav {
 	.dropdown-menu {
 		background-color: #212121;
 	}
+
+	.kofi-item {
+		display: flex;
+		align-items: center;
+
+		.kofi {
+			border: 0px;
+			height: 30px;
+			width: 110px;
+			pointer-events: none;
+			user-select: none;
+		}
+	}
 }
 
 @media only screen and (max-width: 991px) {
 	nav {
 		margin-bottom: 2rem;
+
+		.nav-item {
+			margin: 0;
+
+			.dropdown-menu {
+				padding-left: 1rem;
+			}
+		}
+
+		.kofi-item {
+			.kofi {
+				margin: 1rem 0;
+			}
+		}
 	}
 }

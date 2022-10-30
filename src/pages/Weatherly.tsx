@@ -1,6 +1,7 @@
 import React from "react";
 
 import AppsFooter from "../components/AppsFooter";
+import Reviews from "../components/Reviews";
 import "../styles/weatherly.scss";
 
 export default function Weatherly() {
@@ -79,24 +80,7 @@ export default function Weatherly() {
 				<a href="https://openweathermap.org/guide" target="_blank" rel="noreferrer">OpenWeatherMap</a>
 			</div>
 
-			<div className="row reviews">
-				<h3>Reviews from users</h3>
-				<div className="col-12 col-md-4 mb-3">
-					<div className="review-box">
-
-					</div>
-				</div>
-				<div className="col-12 col-md-4 mb-3">
-					<div className="review-box">
-						
-					</div>
-				</div>
-				<div className="col-12 col-md-4 mb-3">
-					<div className="review-box">
-						
-					</div>
-				</div>
-			</div>
+			<Reviews app="weatherly" />
 
 			<AppsFooter app="weatherly"/>
 		</div>

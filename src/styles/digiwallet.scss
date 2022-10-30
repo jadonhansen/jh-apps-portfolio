@@ -11,7 +11,7 @@
 	.landing {
 		width: 80%;
 		min-height: calc(100vh - 170px) !important;
-		margin-bottom: 10rem;
+		margin-bottom: 4rem;
 
 		.left {
 			margin-top: 5rem;
@@ -46,8 +46,8 @@
 				display: flex;
 		
 				.androidBadge {
-					width: 314px;
-					height: 124px;
+					width: 250px;
+					height: 99px;
 					display: inline-block;
 					pointer-events: none;
 					user-select: none;
@@ -55,11 +55,10 @@
 
 				.iosBadge {
 					display: inline-block;
-					width: 250px;
-					height: 83px;
-					margin-top: 1.2rem;
+					width: 200px;
+					height: 67px;
+					margin-top: 1rem;
 					border-radius: 13px;
-					overflow: hidden;
 					pointer-events: none;
 					user-select: none;
 				}
@@ -71,6 +70,17 @@
 			width: 27rem;
 			pointer-events: none;
 			user-select: none;
+		}
+	}
+
+	@media only screen and (max-width: 1110px) {
+		.landing {
+			.right {
+				.landing-img {
+					height: 30rem;
+					width: 22rem;
+				}
+			}
 		}
 	}
 
@@ -108,7 +118,7 @@
 					.androidBadge {
 						width: 175px;
 						height: 75px;
-						margin-top: 1.3rem;
+						margin-top: 1.2rem;
 					}
 				}
 			}
@@ -161,6 +171,29 @@
 		}
 	}
 
+	@media only screen and (max-width: 1290px) {
+		.about {
+			.left {
+				img {
+					height: 24rem;
+					width: 34rem;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 950px) {
+		.about {
+			.left {
+				img {
+					height: 19rem;
+					width: 29rem;
+				}
+			}
+		}
+	}
+
+
 	@media only screen and (max-width: 767px) {
 		.about {
 			min-height: fit-content;
@@ -203,37 +236,24 @@
 		}
 	}
 
-	.reviews {
-		width: 100%;
-		min-height: fit-content;
-		background: linear-gradient(to bottom, transparent, #080808b6), #1DA1F2;
-		padding: 8rem 4rem;
-
-		h3 {
-			text-align: center;
-			margin-bottom: 6rem;
-			color: white !important;
-		}
-	
-		.col-md-4 {
-			display: flex;
-			justify-content: center;
-		}
-	
-		.review-box {
-			height: 18rem;
-			width: 15rem;
-			background-color: rgba(255, 255, 255, 0.8);
-			border-radius: 25px;
+	@media only screen and (max-width: 1290px) {
+		.features {
+			.right {
+				img {
+					height: 26rem;
+					width: 22rem;
+				}
+			}
 		}
 	}
 
-	@media only screen and (max-width: 767px) {
-		.reviews {
-			padding: 2rem;
-
-			h3 {
-				margin-bottom: 3rem;
+	@media only screen and (max-width: 950px) {
+		.features {
+			.right {
+				img {
+					height: 24rem;
+					width: 21rem;
+				}
 			}
 		}
 	}

@@ -1,6 +1,7 @@
 import React from "react";
-import AppsFooter from "../components/AppsFooter";
 
+import AppsFooter from "../components/AppsFooter";
+import Reviews from "../components/Reviews";
 import "../styles/digiwallet.scss";
 
 export default function Digiwallet() {
@@ -62,24 +63,7 @@ export default function Digiwallet() {
 				</div>
 			</div>
 
-			<div className="row reviews">
-				<h3>Reviews from users</h3>
-				<div className="col-12 col-md-4 mb-3">
-					<div className="review-box">
-
-					</div>
-				</div>
-				<div className="col-12 col-md-4 mb-3">
-					<div className="review-box">
-						
-					</div>
-				</div>
-				<div className="col-12 col-md-4 mb-3">
-					<div className="review-box">
-						
-					</div>
-				</div>
-			</div>
+			<Reviews app="digiwallet" />
 
 			<AppsFooter app="digiwallet" />
 		</div>

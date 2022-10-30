@@ -1,0 +1,40 @@
+{
+	"weatherly": {
+		"ios": [
+			{
+				"user": "WadeWhitear",
+				"date": "22/09/2021",
+				"comment": "Love the app",
+				"stars": 5
+			}
+		],
+		"android": [
+			{
+				"user": "Byron Mitchell",
+				"date": "22/09/2021",
+				"comment": "Absolutely awesome, very accurate and provides me with reliable weather information for when I need to hit the track!",
+				"stars": 5
+			},
+			{
+				"user": "Sebastian Collison",
+				"date": "22/09/2021",
+				"comment": "The cleanest UI design I've seen on a weather app. I would highly recommend 🤞 Keep up the great work!",
+				"stars": 5
+			},
+			{
+				"user": "Kristin Trout",
+				"date": "22/04/2021",
+				"comment": "Great app. So simple and easy to use, definitely prefer over my standard Samsung weather app.",
+				"stars": 5
+			}
+		]
+	},
+	"digiwallet": {
+		"ios": [
+
+		],
+		"android": [
+
+		]
+	}
+}
