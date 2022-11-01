@@ -1,8 +1,16 @@
 import React, { useState } from "react";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { FirebaseApp } from "firebase/app";
 
 import "../styles/contact.scss";
 
-export default function Contact() {
+interface ContactProps {
+	firebaseApp: FirebaseApp
+}
+
+export default function Contact({ firebaseApp }: ContactProps) {
+	const firestore = getFirestore(firebaseApp);
+
 	const [email, setEmail] = useState("");
 	const [name, setName] = useState("");
 	const [message, setMessage] = useState("");
@@ -17,7 +25,7 @@ export default function Contact() {
 		return false;
 	};
 
-	const send = () => {
+	const send = async () => {
 		setLoading(true);
 		setError(undefined);
 		setSuccess(false);
@@ -27,11 +35,22 @@ export default function Contact() {
 		}
 		else if (!validEmail(email)) setError("Invalid email address. Please try again.");
 		else {
-			// send email
-			setSuccess(true); // or fail if err
-			setEmail("");
-			setName("");
-			setMessage("");
+			try {
+				await addDoc(collection(firestore,  process.env.REACT_APP_CONTACT_COLLECTION as string), {
+					name: name,
+					email: email,
+					message: message
+				});
+
+				setSuccess(true);
+				setEmail("");
+				setName("");
+				setMessage("");
+			} catch (e) {
+				setSuccess(false);
+				setError("Oops! There was an issue sending your message. Please try again.");
+				console.error("Error sending message", e);
+			}
 		}
 
 		setLoading(false);
