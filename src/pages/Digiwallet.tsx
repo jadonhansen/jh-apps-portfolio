@@ -33,7 +33,7 @@ export default function Digiwallet() {
 					</div>
 				</div>
 				<div className="col-md-5 right">
-					<img className="landing-img" src={require("../assets/digiwallet/digiwalletLanding.png")}></img>
+					<img className="landing-img" src={require("../assets/digiwallet/digiwalletLanding1.png")}></img>
 				</div>
 			</div>
 

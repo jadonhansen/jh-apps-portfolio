@@ -64,11 +64,16 @@
 			}
 		}
 
-		.landing-img {
-			height: 35rem;
-			width: 15rem;
-			pointer-events: none;
-			user-select: none;
+		.right {
+			display: flex;
+			justify-content: center;
+
+			.landing-img {
+				height: 35rem;
+				width: 35rem;
+				pointer-events: none;
+				user-select: none;
+			}
 		}
 
 		@media only screen and (max-width: 767px) {
@@ -115,7 +120,7 @@
 
 				.landing-img {
 					height: 25rem;
-					width: 10rem;
+					width: 25rem;
 					margin-top: 2rem;
 				}
 			}
@@ -144,16 +149,18 @@
 		}
 
 		img {
-			height: 43rem;
-			width: 33rem;
+			// height: 43rem; // original
+			// width: 33rem;
+			height: 31rem;
+			width: 28rem;
 			pointer-events: none;
 			user-select: none;
 		}
 
 		@media only screen and (max-width: 1060px) {
 			img {
-				height: 38rem;
-				width: 28rem;
+				height: 28rem;
+				width: 25rem;
 			}
 		}
 	}

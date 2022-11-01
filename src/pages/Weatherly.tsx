@@ -32,7 +32,7 @@ export default function Weatherly() {
 					</div>
 				</div>
 				<div className="col-md-4 right">
-					<img className="landing-img" src={require("../assets/weatherly/weatherlyLanding1.png")}></img>
+					<img className="landing-img" src={require("../assets/weatherly/weatherlyLanding.png")}></img>
 				</div>
 			</div>
 
