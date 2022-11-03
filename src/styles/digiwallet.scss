@@ -11,7 +11,7 @@
 	.landing {
 		width: 80%;
 		min-height: calc(100vh - 170px) !important;
-		margin-bottom: 4rem;
+		margin-bottom: 6rem;
 
 		.left {
 			margin-top: 5rem;
@@ -66,8 +66,8 @@
 		}
 
 		.landing-img {
-			height: 36rem;
-			width: 27rem;
+			height: 34rem;
+			width: 28rem;
 			pointer-events: none;
 			user-select: none;
 		}
@@ -77,8 +77,8 @@
 		.landing {
 			.right {
 				.landing-img {
-					height: 30rem;
-					width: 22rem;
+					height: 29rem;
+					width: 24rem;
 				}
 			}
 		}
@@ -129,7 +129,7 @@
 	
 				.landing-img {
 					height: 19rem;
-					width: 14rem;
+					width: 15rem;
 					margin-top: 2rem;
 				}
 			}
@@ -151,7 +151,7 @@
 	.about {
 		width: 90%;
 		min-height: fit-content;
-		margin-bottom: 10rem;
+		margin-bottom: 12rem;
 
 		.left, .right {
 			display: flex;
@@ -216,7 +216,7 @@
 		.right {
 			img {
 				height: 34rem;
-				width: 29rem;
+				width: 30rem;
 				pointer-events: none;
 				user-select: none;
 			}
@@ -229,7 +229,7 @@
 
 				img {
 					height: 21rem;
-					width: 18rem;
+					width: 19rem;
 					margin-top: 2rem;
 				}
 			}

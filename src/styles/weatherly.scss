@@ -143,24 +143,26 @@
 		margin-bottom: 10rem;
 
 		.right {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
 			h3 {
-				margin: 8rem 0 4rem 0;
+				margin-bottom: 4rem;
 			}
 		}
 
 		img {
-			// height: 43rem; // original
-			// width: 33rem;
-			height: 31rem;
-			width: 28rem;
+			height: 43rem;
+			width: 33rem;
 			pointer-events: none;
 			user-select: none;
 		}
 
 		@media only screen and (max-width: 1060px) {
 			img {
-				height: 28rem;
-				width: 25rem;
+				height: 35rem;
+				width: 26rem;
 			}
 		}
 	}

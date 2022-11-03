@@ -30,7 +30,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="col-md-12 col-lg-5 right">
-					<img className="mockup" src={require("../assets/mockups/homePageMockup.png")}></img>
+					<img className="mockup" src={require("../assets/mockups/homeLanding.png")}></img>
 				</div>
 			</div>
 		</div>
