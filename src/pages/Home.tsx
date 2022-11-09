@@ -23,7 +23,7 @@ export default function Home() {
 						<img className="app-icon" src={require("../assets/digiwallet/AppIcon.png")}></img>
 						<div className="hover-wrapper">
 							<Link className="app-link" to={"/digiwallet"}>
-								Digiwallet
+								DigiWallet
 								<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
 							</Link>
 						</div>

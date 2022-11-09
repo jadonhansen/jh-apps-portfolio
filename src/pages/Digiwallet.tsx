@@ -12,7 +12,7 @@ export default function Digiwallet() {
 				<div className="col-md-7 left">
 					<div className="app-title">
 						<img src={require("../assets/digiwallet/AppIcon.png")}></img>
-						<h1>Digiwallet</h1>
+						<h1>DigiWallet</h1>
 					</div>
 					<p>For an effortless shopping experience.</p>
 					<div className="badges">
