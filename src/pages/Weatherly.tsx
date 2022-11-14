@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Analytics, logEvent } from "firebase/analytics";
 
 import AppsFooter from "../components/AppsFooter";
 import Reviews from "../components/Reviews";
 import "../styles/weatherly.scss";
 
-export default function Weatherly() {
+interface WeatherlyProps {
+	firebaseAnalytics: Analytics
+}
+
+export default function Weatherly(props: WeatherlyProps) {
+
+	useEffect(() => {
+		logEvent(props.firebaseAnalytics, "view_react_page", { page: "Weatherly" });
+	}, []);
 
 	return (
 		<div className="container-fluid weatherly">

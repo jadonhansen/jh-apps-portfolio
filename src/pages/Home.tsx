@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Analytics, logEvent } from "firebase/analytics";
 
 import "../styles/home.scss";
 
-export default function Home() {
+interface Home {
+	firebaseAnalytics: Analytics
+}
+
+export default function Home(props: Home) {
+
+	useEffect(() => {
+		logEvent(props.firebaseAnalytics, "view_react_page", { page: "Home" });
+	}, []);
+
+	const linkClick = (link: string) => {
+		logEvent(props.firebaseAnalytics, "home_link_click", { link: link });
+	};
+
 	return (
 		<div className="container-sm home">
 			<div className="row">
@@ -13,7 +27,7 @@ export default function Home() {
 					<div className="link">
 						<img className="app-icon" src={require("../assets/weatherly/AppIcon.png")}></img>
 						<div className="hover-wrapper">
-							<Link className="app-link" to={"/weatherly"}>
+							<Link onClick={() => linkClick("weatherly")} className="app-link" to={"/weatherly"}>
 								Weatherly
 								<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
 							</Link>
@@ -22,7 +36,7 @@ export default function Home() {
 					<div className="link">
 						<img className="app-icon" src={require("../assets/digiwallet/AppIcon.png")}></img>
 						<div className="hover-wrapper">
-							<Link className="app-link" to={"/digiwallet"}>
+							<Link onClick={() => linkClick("digiwallet")} className="app-link" to={"/digiwallet"}>
 								DigiWallet
 								<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
 							</Link>

@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Analytics, logEvent } from "firebase/analytics";
 
 import AppsFooter from "../components/AppsFooter";
 import Reviews from "../components/Reviews";
 import "../styles/digiwallet.scss";
 
-export default function Digiwallet() {
+interface DigiwalletProps {
+	firebaseAnalytics: Analytics
+}
+
+export default function Digiwallet(props: DigiwalletProps) {
+
+	useEffect(() => {
+		logEvent(props.firebaseAnalytics, "view_react_page", { page: "Digiwallet" });
+	});
 
 	return (
 		<div className="container-fluid digiwallet">

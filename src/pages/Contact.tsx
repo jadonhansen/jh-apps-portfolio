@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { FirebaseApp } from "firebase/app";
+import { Analytics, logEvent } from "firebase/analytics";
 
 import "../styles/contact.scss";
 
 interface ContactProps {
-	firebaseApp: FirebaseApp
+	firebaseApp: FirebaseApp,
+	firebaseAnalytics: Analytics
 }
 
-export default function Contact({ firebaseApp }: ContactProps) {
+export default function Contact({ firebaseApp, firebaseAnalytics }: ContactProps) {
+
+	useEffect(() => {
+		logEvent(firebaseAnalytics, "view_react_page", { page: "Contact" });
+	}, []);
+
 	const firestore = getFirestore(firebaseApp);
 
 	const [email, setEmail] = useState("");
@@ -46,6 +53,7 @@ export default function Contact({ firebaseApp }: ContactProps) {
 				setEmail("");
 				setName("");
 				setMessage("");
+				logEvent(firebaseAnalytics, "sent_contact_message");
 			} catch (e) {
 				setSuccess(false);
 				setError("Oops! There was an issue sending your message. Please try again.");

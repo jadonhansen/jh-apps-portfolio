@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 import Home from "./pages/Home";
 import Weatherly from "./pages/Weatherly";
@@ -22,18 +23,19 @@ function App() {
 	};
 
 	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
 
 	return (
 		<>
-			<Navbar />
+			<Navbar firebaseAnalytics={analytics} />
 
 			<Routes>
-				<Route path="/" element={<Home/>} />
-				<Route path="weatherly" element={<Weatherly />} />
-				<Route path="weatherly/privacy_policy" element={<WeatherlyPolicy />} />
-				<Route path="digiwallet" element={<Digiwallet />} />
-				<Route path="digiwallet/privacy_policy" element={<DigiWalletPolicy />} />
-				<Route path="contact" element={<Contact firebaseApp={app} />} />
+				<Route path="/" element={<Home firebaseAnalytics={analytics}/>} />
+				<Route path="weatherly" element={<Weatherly firebaseAnalytics={analytics}/>} />
+				<Route path="weatherly/privacy_policy" element={<WeatherlyPolicy firebaseAnalytics={analytics}/>} />
+				<Route path="digiwallet" element={<Digiwallet firebaseAnalytics={analytics}/>} />
+				<Route path="digiwallet/privacy_policy" element={<DigiWalletPolicy firebaseAnalytics={analytics}/>} />
+				<Route path="contact" element={<Contact firebaseApp={app} firebaseAnalytics={analytics}/>} />
 			</Routes>
 		</>
 	);

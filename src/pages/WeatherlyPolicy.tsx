@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Analytics, logEvent } from "firebase/analytics";
 
 import "../styles/privacy_policy.scss";
 
-export default function WeatherlyPolicy() {
+interface WeatherlyPolicyProps {
+	firebaseAnalytics: Analytics
+}
+
+export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
+
+	useEffect(() => {
+		logEvent(props.firebaseAnalytics, "view_react_page", { page: "WeatherlyPolicy" });
+	}, []);
+
+	const goBack = () => {
+		logEvent(props.firebaseAnalytics, "weatherly_policy_go_back_btn");
+	};
+
 	return (
 		<div className="container-md privacy-container">
 			<div className="btn-box">
-				<Link className="back-button" to={"/weatherly"}>Back to Weatherly</Link>
+				<Link onClick={goBack} className="back-button" to={"/weatherly"}>Back to Weatherly</Link>
 			</div>
 
 			<h3>Weatherly Privacy Policy</h3>

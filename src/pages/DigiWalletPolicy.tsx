@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Analytics, logEvent } from "firebase/analytics";
 
 import "../styles/privacy_policy.scss";
 
-export default function DigiWalletPolicy() {
+interface DigiWalletPolicyProps {
+	firebaseAnalytics: Analytics
+}
+
+export default function DigiWalletPolicy(props: DigiWalletPolicyProps) {
+
+	useEffect(() => {
+		logEvent(props.firebaseAnalytics, "view_react_page", { page: "DigiWalletPolicy" });
+	}, []);
+
+	const goBack = () => {
+		logEvent(props.firebaseAnalytics, "digiwallet_policy_go_back_btn");
+	};
+
 	return (
 		<div className="container-md privacy-container">
 			<div className="btn-box">
-				<Link className="back-button" to={"/digiwallet"}>Back to DigiWallet</Link>
+				<Link onClick={goBack} className="back-button" to={"/digiwallet"}>Back to DigiWallet</Link>
 			</div>
 
 			<h3>DigiWallet&apos;s Privacy Policy</h3>
