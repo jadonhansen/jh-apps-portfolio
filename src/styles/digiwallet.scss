@@ -9,7 +9,7 @@
 	}
 
 	.landing {
-		width: 80%;
+		width: 65%;
 		min-height: calc(100vh - 170px) !important;
 		margin-bottom: 6rem;
 
@@ -149,7 +149,7 @@
 	}
 
 	.about {
-		width: 90%;
+		width: 80%;
 		min-height: fit-content;
 		margin-bottom: 12rem;
 
@@ -205,7 +205,7 @@
 	}
 
 	.features {
-		width: 80%;
+		width: 70%;
 		min-height: fit-content;
 		margin-bottom: 10rem;
 
@@ -259,9 +259,21 @@
 	}
 }
 
+@media only screen and (max-width: 1500px) {
+	.digiwallet {
+		.landing, .features {
+			width: 80%;
+		}
+
+		.about {
+			width: 90%
+		}
+	}
+}
+
 @media only screen and (max-width: 1000px) {
 	.digiwallet {
-		.landing, .about, .features, .api {
+		.landing, .about, .features {
 			width: 100%;
 			margin-bottom: 4rem;
 

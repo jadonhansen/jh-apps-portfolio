@@ -1,5 +1,5 @@
 .home {
-	width: 80%;
+	width: 65%;
 	display: flex;
 	align-content: center;
 
@@ -61,6 +61,12 @@
 			pointer-events: none;
 			user-select: none;
 		}
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	.home {
+		width: 80%;
 	}
 }
 
