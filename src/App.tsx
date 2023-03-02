@@ -10,6 +10,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import WeatherlyPolicy from "./pages/WeatherlyPolicy";
 import DigiWalletPolicy from "./pages/DigiWalletPolicy";
+import LocalHustle from "./pages/LocalHustle";
+import LocalHustlePolicy from "./pages/LocalHustlePolicy";
 
 function App() {
 	const firebaseConfig = {
@@ -35,6 +37,8 @@ function App() {
 				<Route path="weatherly/privacy_policy" element={<WeatherlyPolicy firebaseAnalytics={analytics}/>} />
 				<Route path="digiwallet" element={<Digiwallet firebaseAnalytics={analytics}/>} />
 				<Route path="digiwallet/privacy_policy" element={<DigiWalletPolicy firebaseAnalytics={analytics}/>} />
+				<Route path="local_hustle" element={<LocalHustle firebaseAnalytics={analytics}/>} />
+				<Route path="local_hustle/privacy_policy" element={<LocalHustlePolicy firebaseAnalytics={analytics}/>} />
 				<Route path="contact" element={<Contact firebaseApp={app} firebaseAnalytics={analytics}/>} />
 			</Routes>
 		</>
