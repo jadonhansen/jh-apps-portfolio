@@ -14,7 +14,7 @@ export default function Home(props: Home) {
 		logEvent(props.firebaseAnalytics, "view_react_page", { page: "Home" });
 	}, []);
 
-	const linkClick = (link: string) => {
+	const linkClick = (link: "weatherly" | "digiwallet" | "localhustle") => {
 		logEvent(props.firebaseAnalytics, "home_link_click", { link: link });
 	};
 
@@ -23,7 +23,7 @@ export default function Home(props: Home) {
 			<div className="row">
 				<div className="col-md-12 col-lg-7 left">
 					<h1>Apps built for the experience</h1>
-					<p>Find out more about my existing two apps</p>
+					<p>Find out more about my existing apps</p>
 					<div className="link">
 						<img className="app-icon" src={require("../assets/weatherly/AppIcon.png")}></img>
 						<div className="hover-wrapper">
@@ -38,6 +38,15 @@ export default function Home(props: Home) {
 						<div className="hover-wrapper">
 							<Link onClick={() => linkClick("digiwallet")} className="app-link" to={"/digiwallet"}>
 								DigiWallet
+								<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
+							</Link>
+						</div>
+					</div>
+					<div className="link">
+						<img className="app-icon" src={require("../assets/localhustle/AppIcon.png")}></img>
+						<div className="hover-wrapper">
+							<Link onClick={() => linkClick("localhustle")} className="app-link" to={"/local_hustle"}>
+								Local Hustle
 								<img className="arrow" src={require("../assets/icons/arrow-right.png")}></img>
 							</Link>
 						</div>

@@ -137,6 +137,8 @@ export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
 					<p className="li-heading">Sharing your personal data</p>
 					<p>We have set out the categories of recipients of the personal data collected or generated through your use of the Weatherly service.</p>
 					<ul>
+						<li>Recipient: Private Weatherly personnel. Reason: We will share your personal data with authorised
+							Weatherly employees to fix, update and improve our services.</li>
 						<li>Recipient: Payment processors. Reason: We will share your personal data with our payment processors as necessary to enable them to process your payments, and for anti-fraud purposes.</li>
 						<li>Recipient: Law enforcement and data protection authorities. Reason: We share your personal data when we in good
 							faith believe it is necessary for us to do so in order to comply with a legal obligation under applicable law, or respond to valid legal
@@ -214,11 +216,11 @@ export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
 				<li>
 					<p className="li-heading">How to contact us</p>
 					<p>Thank you for reading our Policy. If you have any questions about this Policy, please contact us on the support
-						page or email us at: dev.weatherly@gmail.com</p>
+						page or email us at: apps(at)jadonhansen.com</p>
 				</li>
 			</ol>
 			<p className={"text-muted bottom-info"}>We hope to provide you with a great experience while using Weatherly!</p>
-			<p className="text-muted">© 2022 Jadon Hansen</p>
+			<p className="text-muted">© 2023 Jadon Hansen</p>
 		</div>
 	);
 }

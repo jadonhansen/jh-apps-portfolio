@@ -11,7 +11,7 @@ interface NavbarProps {
 
 export default function Navbar(props: NavbarProps) {
 
-	const linkClick = (link: string) => {
+	const linkClick = (link: "weatherly" | "digiwallet" | "localhustle" | "home-logo" | "kofi" | "home" | "contact") => {
 		logEvent(props.firebaseAnalytics, "navbar_link_click", { link: link });
 	};
 
@@ -60,6 +60,11 @@ export default function Navbar(props: NavbarProps) {
 								<li>
 									<Link onClick={() => linkClick("digiwallet")} className="nav-link" to="digiwallet">
 										DigiWallet
+									</Link>
+								</li>
+								<li>
+									<Link onClick={() => linkClick("localhustle")} className="nav-link" to="local_hustle">
+										Local Hustle
 									</Link>
 								</li>
 							</ul>
