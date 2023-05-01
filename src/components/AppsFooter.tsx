@@ -49,11 +49,10 @@ export default function AppsFooter({ app }: AppsFooter) {
 						</a>
 					</div>)
 				}
-				{/* UPDATE BELOW BADGES FOR LH */}
 				{
 					app === "localhustle" &&
 					(<div className="badges">
-						<a href="https://apps.apple.com/us/app/digiwallet/id1593438301?itsct=apps_box_badge&amp;itscg=30200"
+						<a href="https://apps.apple.com/us/app/local-hustle/id6444708088?itsct=apps_box_badge&amp;itscg=30200"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -61,7 +60,7 @@ export default function AppsFooter({ app }: AppsFooter) {
 						</a>
 
 						<a
-							href="https://play.google.com/store/apps/details?id=com.digiwalletapp.digiwallet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+							href="https://play.google.com/store/apps/details?id=com.jadonhansen.localhustle&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
