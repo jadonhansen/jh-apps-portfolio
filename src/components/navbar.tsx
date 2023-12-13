@@ -35,12 +35,6 @@ export default function Navbar(props: NavbarProps) {
 				<div className="collapse navbar-collapse" id="navbarContent">
 					<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 
-						<li className="nav-item kofi-item">
-							<a onClick={() => linkClick("kofi")} href="https://ko-fi.com/N4N6BVG9Q" target="_blank" rel="noreferrer">
-								<img className="kofi" src="https://storage.ko-fi.com/cdn/kofi1.png?v=3" alt='Buy Me a Coffee at ko-fi.com' />
-							</a>
-						</li>
-
 						<li className="nav-item dropdown">
 							<a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Apps

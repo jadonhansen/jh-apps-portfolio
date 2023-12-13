@@ -76,9 +76,6 @@ export default function AppsFooter({ app }: AppsFooter) {
 					{app === "localhustle" && <Link to={"/local_hustle/privacy_policy"}>Privacy Policy</Link>}
 					<Link to={"/contact"}>Contact</Link>
 				</div>
-				<a href="https://ko-fi.com/N4N6BVG9Q" target="_blank" rel="noreferrer">
-					<img className="kofi" src="https://storage.ko-fi.com/cdn/kofi1.png?v=3" alt='Buy Me a Coffee at ko-fi.com' />
-				</a>
 			</div>
 		</div>
 	);
