@@ -25,7 +25,7 @@ export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
 			</div>
 
 			<h3>Weatherly Privacy Policy</h3>
-			<h6>Effective as of 01-01-2021</h6>
+			<h6>Effective as of 20-12-2023</h6>
 			<p className="text-muted">If there are any questions regarding the below, please do not
 				hesitate to contact support.
 			</p>
@@ -97,8 +97,6 @@ export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
 						automated decision making, including profiling, where the decision would have a legal effect on you or produce a similarly significant effect.</p>
 					<p>In order to enable you to learn more about these rights, exercise these rights with ease, and record your
 						preferences in relation to how Weatherly uses your personal data, we provide the following resources:</p>
-					<p>- User Settings: allows you to exercise choices about the processing of certain personal data, and an automated
-						&apos;Delete Account&apos; function to remove and stop the processing of your data.</p>
 					<p>- Support (accessed via the settings page): allows you to make a request regarding the use, rectification,
 						access and erasure of personal data.</p>
 					<p>If you have any questions about your privacy, your rights, or how to exercise them, please contact support found on the Weatherly app support page.</p>
@@ -107,66 +105,31 @@ export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
 				{/* 4. Personal data we collect from you */}
 				<li>
 					<p className="li-heading">Personal data we collect from you</p>
-					<p>The points below describes personal data collected when you sign up for a Weatherly account</p>
-					<p>User Data: This is the personal data that is provided by you or collected by us to enable you to sign up for and use
-						a Weatherly account. This includes your email address.</p>
-					<p>Usage Data: This is the personal data that is collected about you when you&apos;re accessing and/or using a Weatherly
-						account, including: your type of Weatherly plan, device type.</p>
-					<p>Purchase Verification Data: This is the App Store and/or Google Play store data that is collected to solely verify the
-						authenticity of an in-app-purchase associated with a Weatherly account.</p>
+					<p>Weatherly does not collect any personally identifiable data. All analytical data is anonymised for your safety.</p>
 				</li>
 
 				{/* 5. What we use your personal data for */}
 				<li>
 					<p className="li-heading">What we use your personal data for</p>
-					<p>When you use or interact with a Weatherly account, we use a variety of technologies to process the personal data we
-						collect about you for various reasons. We have set out the points below as the reasons why we process your personal data:</p>
-					<ul>
-						<li>Purpose: To provide and personalize the Weatherly service. Associated Data: User Data, Usage Data, Purchase Verification Data.</li>
-						<li>Purpose: To understand, diagnose, troubleshoot, and fix issues with the Weatherly service. Associated Data: User Data, Usage Data, Purchase Verification Data.</li>
-						<li>Purpose: To evaluate and develop new features, technologies, and improvements to the Weatherly service. Associated Data: User Data, Usage Data, Purchase Verification Data.</li>
-						<li>Purpose: To comply with legal obligations and law enforcement requests. Associated Data: User Data, Usage Data, Purchase Verification Data.</li>
-						<li>Purpose: To process your payment. Associated Data: User Data, Usage Data, Purchase Verification Data.</li>
-						<li>Purpose: To detect fraud, including fraudulent payments and fraudulent use of the Weatherly service. Associated Data: User Data, Usage Data, Purchase Verification Data.</li>
-						<li>Purpose: To establish, exercise, or defend legal claims. Associated Data: User Data, Usage Data, Purchase Verification Data.</li>
-					</ul>
+					<p>All analytical data is anonymised for your safety and its sole purpose is to troubleshoot issues and develop new features for the Weatherly service.</p>
 				</li>
 
 				{/* 6. Sharing your personal data */}
 				<li>
 					<p className="li-heading">Sharing your personal data</p>
-					<p>We have set out the categories of recipients of the personal data collected or generated through your use of the Weatherly service.</p>
-					<ul>
-						<li>Recipient: Private Weatherly personnel. Reason: We will share your personal data with authorised
-							Weatherly employees to fix, update and improve our services.</li>
-						<li>Recipient: Payment processors. Reason: We will share your personal data with our payment processors as necessary to enable them to process your payments, and for anti-fraud purposes.</li>
-						<li>Recipient: Law enforcement and data protection authorities. Reason: We share your personal data when we in good
-							faith believe it is necessary for us to do so in order to comply with a legal obligation under applicable law, or respond to valid legal
-							process, such as a search warrant, a court order, or a subpoena. We also share your personal data where we in good faith believe that it
-							is necessary for the purpose of our own, or a third party&apos;s legitimate interest relating to national security, law enforcement, litigation,
-							criminal investigation, protecting the safety of any person, or to prevent death or imminent bodily harm, provided that we deem that such
-							interest is not overridden by your interests or fundamental rights and freedoms requiring the protection of your personal data.</li>
-					</ul>
+					<p>Weatherly does not collect or share any personally identifiable data.</p>
 				</li>
 
 				{/* 7. Data retention and deletion */}
 				<li>
 					<p className="li-heading">Data retention and deletion</p>
-					<p>We keep your personal data only as long as necessary to provide you with the Weatherly service and for legitimate and
-						essential business purposes, such as maintaining the performance of the Weatherly service, making data-driven business decisions about new
-						features and offerings, complying with our legal obligations, and resolving disputes. We keep some of your personal data for as long as you
-						are a user of the Weatherly service.</p>
-					<p>If you request, we will delete or anonymise your personal data so that it no longer identifies you, unless we are
-						legally allowed or required to maintain certain personal data, including situations such as the following:</p>
-					<p>- If there is an unresolved issue relating to your account, such as an outstanding credit on your account or an unresolved claim or dispute we will retain the necessary personal data until the issue is resolved;</p>
-					<p>- Where we need to retain the personal data for our legal, tax, audit, and accounting obligations, we will retain the necessary personal data for the period required by applicable law; and/or,</p>
-					<p>- Where necessary for our legitimate business interests such as fraud prevention or to maintain the security of our users.</p>
+					<p>All data is anonymised so that it no longer identifies you.</p>
 				</li>
 
 				{/* 8. Transfer to other countries */}
 				<li>
 					<p className="li-heading">Transfer to other countries</p>
-					<p>Weatherly shares your personal data globally with the necessary services to securely store and process your data as specified in this Policy.</p>
+					<p>Weatherly does not collect or share any personally identifiable data.</p>
 				</li>
 
 				{/* 9. Links */}
@@ -181,35 +144,19 @@ export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
 				{/* 10. Keeping your personal data safe */}
 				<li>
 					<p className="li-heading">Keeping your personal data safe</p>
-					<p>We are committed to protecting our users&apos; personal data. We implement appropriate technical and organisational
-						measures to help protect the security of your personal data; however, please note that no system is ever completely secure. We have
-						implemented various policies including pseudonymisation, encryption, access, and retention policies to guard against unauthorised access and
-						unnecessary retention of personal data in our systems.</p>
-					<p>Your password protects your user account, so we encourage you to use a strong password that is unique to your
-						Weatherly account, never share your password with anyone, limit access to your computer and browser, and log out after having used the Weatherly service.</p>
+					<p>All data is anonymised so that it no longer identifies you.</p>
 				</li>
 
 				{/* 11. Children */}
 				<li>
 					<p className="li-heading">Children</p>
-					<p>The Weatherly service is not directed to children under the age of 13 years. The Weatherly service is also not offered
-						to children whose age makes it illegal to process their personal data or requires parental consent for the processing of their personal data
-						under the GDPR or other local law.</p>
-					<p>We do not knowingly collect personal data from children under 13 years or under the applicable age limit
-						(the &apos;Age Limit&apos;). If you are under the Age Limit, please do not use the Weatherly service, and do not provide any personal data to us.</p>
-					<p>If you are a parent of a child under the Age Limit and become aware that your child has provided personal data to
-						Weatherly, please contact us using the support page in the app settings, and you may request exercise of your applicable rights detailed
-						in Section 3 &apos;Your rights and your preferences: Giving you choice and control&apos; of this Policy.</p>
-					<p>If we learn that we have collected the personal data of a child under the age of 13 years, we will take reasonable
-						steps to delete the personal data. This may require us to delete the Weatherly account for that child.</p>
+					<p>The Weatherly service data collection Policy does not affect children under the age of 13 years.</p>
 				</li>
 
 				{/* 12. Changes to this Policy */}
 				<li>
 					<p className="li-heading">Changes to this Policy</p>
-					<p>We may occasionally make changes to this Policy. When we make material changes to this Policy, we&apos;ll provide you with
-						prominent notice as appropriate under the circumstances, e.g., by displaying a prominent notice within the Weatherly service or by sending you
-						an email and/or a device notification. We may notify you in advance. Please, therefore, make sure you read any such notice carefully.</p>
+					<p>We may occasionally make changes to this Policy. When we make material changes to this Policy, it will be avilable on our website and in-app.</p>
 				</li>
 
 				{/* 13. How to contact us */}
@@ -220,7 +167,7 @@ export default function WeatherlyPolicy(props: WeatherlyPolicyProps) {
 				</li>
 			</ol>
 			<p className={"text-muted bottom-info"}>We hope to provide you with a great experience while using Weatherly!</p>
-			<p className="text-muted">© 2023 Jadon Hansen</p>
+			<p className="text-muted">© 2024 Jadon Hansen</p>
 		</div>
 	);
 }
