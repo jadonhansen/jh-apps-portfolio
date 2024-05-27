@@ -222,7 +222,7 @@ export default function LocalHustlePolicy(props: LocalHustlePolicyProps) {
 				</li>
 			</ol>
 			<p className={"text-muted bottom-info"}>We hope to provide you with a great experience while using Local Hustle!</p>
-			<p className="text-muted">© 2023 Jadon Hansen</p>
+			<p className="text-muted">© 2024 Jadon Hansen</p>
 		</div>
 	);
 }

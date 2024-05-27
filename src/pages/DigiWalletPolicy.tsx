@@ -192,7 +192,7 @@ export default function DigiWalletPolicy(props: DigiWalletPolicyProps) {
 				</li>
 			</ol>
 			<p className={"text-muted bottom-info"}>We hope to provide you with a unique experience while using DigiWallet!</p>
-			<p className="text-muted">© 2023 Jadon Hansen.</p>
+			<p className="text-muted">© 2024 Jadon Hansen.</p>
 		</div>
 	);
 }

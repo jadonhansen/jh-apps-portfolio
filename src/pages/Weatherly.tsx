@@ -74,11 +74,12 @@ export default function Weatherly(props: WeatherlyProps) {
 					<img src={require("../assets/weatherly/weatherlyFeatures.png")}></img>
 				</div>
 				<div className="col-12 col-lg-4 mb-3">
-					<h3>Premium features</h3>
+					<h3>MORE <span className="strike">premium</span> features</h3>
 					<p>- 24 hour and 7 day forecast graphs.</p>
 					<p>- Save an infinite amount of locations.</p>
 					<p>- Set a saved location to be your default home screen location.</p>
 					<p>- No ads.</p>
+					<p className="premium-notice">*We have removed account creation and management as well as premium subscriptions to bring all these extra features to you for free!</p>
 				</div>
 			</div>
 

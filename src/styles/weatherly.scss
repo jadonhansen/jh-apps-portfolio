@@ -29,13 +29,13 @@
 					pointer-events: none;
 					user-select: none;
 				}
-	
+
 				h1 {
 					font-size: 5rem;
 					margin: 0;
 				}
 			}
-	
+
 			p {
 				font-size: 20px;
 				margin-bottom: 4rem;
@@ -176,7 +176,7 @@
 					margin: 0;
 				}
 			}
-	
+
 			.col-img {
 				display: none;
 			}
@@ -190,6 +190,15 @@
 
 		h3 {
 			margin-bottom: 4rem;
+		}
+
+		.strike {
+			text-decoration: line-through;
+		}
+
+		.premium-notice {
+			margin-top: 2rem;
+			color: tomato !important;
 		}
 
 		.img-col {
@@ -229,19 +238,24 @@
 
 @media only screen and (max-width: 1500px) {
 	.weatherly {
-		.landing, .features, .api {
+		.landing,
+		.features,
+		.api {
 			width: 80%;
 		}
 
 		.about {
-			width: 90%
+			width: 90%;
 		}
 	}
 }
 
 @media only screen and (max-width: 1000px) {
 	.weatherly {
-		.landing, .about, .features, .api {
+		.landing,
+		.about,
+		.features,
+		.api {
 			width: 100%;
 			margin-bottom: 4rem;
 
